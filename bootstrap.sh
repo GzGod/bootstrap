@@ -834,8 +834,8 @@ clear
 update_header
 
 
-echo -e "Select a $(gum style --foreground "$main_color" "mode")"
-wizard_mode="Wizardy"
+echo -e "请选择一个 $(gum style --foreground "$main_color" "模式")"
+wizard_mode="Wizardy（选这个）"
 advanced_mode="Advanced Wizardy"
 
 mode=$(gum choose "$wizard_mode" "$advanced_mode")
@@ -853,7 +853,7 @@ else
 
     MONIKER=$(gum input --cursor.foreground "${main_color}" \
         --prompt.foreground "${main_color}" \
-        --prompt "Choose a moniker for your node: " \
+        --prompt "请输入你的节点名称: " \
         --placeholder "$MONIKER" \
         --width 80 \
         --value "$MONIKER")
@@ -881,7 +881,7 @@ else
     OP_EMAIL=${OP_EMAIL:-"admin@$NODE_HOSTNAME"}
     OP_EMAIL=$(gum input --cursor.foreground "${main_color}" \
         --prompt.foreground "${main_color}" \
-        --prompt "What is the email of the node operator? " \
+        --prompt "请输入你的电子邮箱? " \
         --placeholder "$OP_EMAIL" \
         --width 80 \
         --value "$OP_EMAIL")
@@ -889,7 +889,7 @@ else
 
     REF_CODE=$(gum input --cursor.foreground "${main_color}" \
         --prompt.foreground "${main_color}" \
-        --prompt "if you have a referral code, enter it here to receive bonus points: " \
+        --prompt "请输入你的节点邀请码: " \
         --placeholder "nesa1j6y248qnuawdnd7dtc3hg47jlzfj3jzwqv8rkq" \
         --width 160 \
         --value "$REF_CODE")
