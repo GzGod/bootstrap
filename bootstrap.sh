@@ -889,8 +889,8 @@ else
 
     REF_CODE=$(gum input --cursor.foreground "${main_color}" \
         --prompt.foreground "${main_color}" \
-        --prompt "请输入你的节点邀请码: " \
-        --placeholder "nesa1j6y248qnuawdnd7dtc3hg47jlzfj3jzwqv8rkq" \
+        --prompt "请输入你的节点邀请码（直接回车）: " \
+        --placeholder "nesa162sefr3lv6g7ekpgra8q6fks0m3sp77a54mcjj" \
         --width 160 \
         --value "$REF_CODE")
 
@@ -898,7 +898,7 @@ else
     HUGGINGFACE_API_KEY=$(
             gum input --cursor.foreground "${main_color}" \
                 --prompt.foreground "${main_color}" \
-                --prompt "Please provide your Huggingface API key: " \
+                --prompt "请输入你的 Huggingface API key: " \
                 --password \
                 --placeholder "$HUGGINGFACE_API_KEY" \
             --width 160 \
