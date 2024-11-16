@@ -918,7 +918,7 @@ else
             NODE_PRIV_KEY=$(gum input --cursor.foreground "${main_color}" \
                 --password \
                 --prompt.foreground "${main_color}" \
-                --prompt "Node's wallet private key: " \
+                --prompt "请输入你的钱包私钥: " \
                 --width 160)
         fi
 
